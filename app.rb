@@ -32,4 +32,14 @@ post '/' do
   erb :tickets
 end
 
+# post '/' do
+#   @event   = Event.new(params[:event])
+#   @swimmer = Person.new(params[:swimmer])
+#   @cyclist = Person.new(params[:cyclist])
+#   @runner  = Person.new(params[:runner])
+
+#   erb :tickets
+# end
+
+
 
