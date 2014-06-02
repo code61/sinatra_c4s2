@@ -1,7 +1,7 @@
 require 'sinatra'
 require './helper_functions'
- require './person'
-# require './event'
+require './person'
+require './event'
 
 get '/' do
   erb :index
@@ -33,7 +33,7 @@ end
 #end
 
  post '/' do
-  # @event   = Event.new(params[:event])
+   @event   = Event.new(params[:event])
    @swimmer = Person.new(params[:swimmer])
    @cyclist = Person.new(params[:cyclist])
    @runner  = Person.new(params[:runner])
